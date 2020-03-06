@@ -1,6 +1,6 @@
 <?php
 
-class Vehicule
+abstract class Vehicule
 {
     protected $vitesse = 0;
     protected $masse;
@@ -11,4 +11,6 @@ class Vehicule
     {
         return 0.5 * $this->masse * $this->vitesse ** 2;
     }
+
+    
 }
