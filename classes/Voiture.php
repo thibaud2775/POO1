@@ -11,4 +11,13 @@ class Voiture
     public $energie;
     public $marque;
     public $modele;
+
+    public function __construct(string $c)
+    {
+        $this->couleur = $c;
+    }
+    public function __destruct()
+    {
+        echo '<p>ta caisse est moche</p>';
+    }
 }
