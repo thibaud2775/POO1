@@ -10,7 +10,7 @@ class Voiture
     public $nbrRoues = 4;
     public $energie;
     public $marque;
-    public $modele
+    public $modele;
 
     public function __construct(string $c,int $m, string $e, string $mq, string $mod)
     {
@@ -27,7 +27,7 @@ class Voiture
         $this->couleur = $value;
     }
     public function getMasse(): int {
-        return $this->masser;
+        return $this->masse;
     }
     public function setMasse($value) : void {
         $this->masse = $value;
@@ -49,11 +49,17 @@ class Voiture
         return $this->modele;
     }
     public function setModele($value) : void {
-        $this->mmodele = $value;
+        $this->modele = $value;
     }
 
     public function __destruct()
     {
         echo '<p>ta caisse est moche</p>';
+    }
+
+    public function calculerEnergieCinetique() : float
+    {
+        return 0.5 * $this->masse * $this->vitesse ** 2;
+        
     }
 }
