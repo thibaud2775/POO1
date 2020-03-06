@@ -13,6 +13,7 @@ $twingo->setMasse(923);
 $twingo->setVitesse(20);
 echo $twingo->calculerEnergieCinetique();
 
+Log::logWrite('oh je fais du...');
 //var_dump($twingo);
 
 
